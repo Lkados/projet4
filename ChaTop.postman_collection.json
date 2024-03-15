@@ -1,10 +1,11 @@
 {
 	"info": {
-		"_postman_id": "ef38c1ca-9f8f-4fd2-8343-155accda8e2e",
+		"_postman_id": "3a24f4ee-c4ae-46d0-b825-06bb34bbb324",
 		"name": "ChaTop",
 		"description": "**Before you begin testing the API routes**\n\n- Be sure to add a value for the jwt Bearer token authorization variable: {{jwt}}\n    \n\n**Steps to retrieve the jwt token**\n\n1. Send a post request via Postman to the auth/login route.\n    \n2. Copy the returned jwt token, and set it as the value of the global or workspace variable. Be sure to name the variable jwt.\n    \n3. Now, Postman requests to secured routes will function as expected.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31080442"
+		"_exporter_id": "11805564",
+		"_collection_link": "https://devcda.postman.co/workspace/CDA~f8ee4615-6820-4a9a-851c-d01fcb6ae938/collection/11805564-3a24f4ee-c4ae-46d0-b825-06bb34bbb324?action=share&source=collection_link&creator=11805564"
 	},
 	"item": [
 		{
@@ -60,11 +61,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/auth/login",
+							"raw": "localhost:3001/api/auth/login",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"api",
 								"auth",
@@ -85,7 +86,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "{{jwt}}",
+									"value": "{{{{jwt}}}}",
 									"type": "string"
 								}
 							]
@@ -139,11 +140,11 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "localhost:3000/api/rentals",
+							"raw": "localhost:3001/api/rentals",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"api",
 								"rentals"
@@ -175,11 +176,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:3000/api/rentals/1",
+							"raw": "localhost:3001/api/rentals/1",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"api",
 								"rentals",
@@ -240,11 +241,11 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:3000/api/rentals",
+							"raw": "localhost:3001/api/rentals",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"api",
 								"rentals"
@@ -295,11 +296,11 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:3000/api/rentals/1",
+							"raw": "localhost:3001/api/rentals/1",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"api",
 								"rentals",
@@ -339,11 +340,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/messages",
+							"raw": "localhost:3001/api/messages",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"api",
 								"messages"
