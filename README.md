@@ -39,8 +39,8 @@ Configurez les Propriétés de Votre Application
 Mettez à jour le fichier application.properties avec les détails de votre serveur, de votre base de données et de votre sécurité. Vous pouvez soit utiliser la configuration du projet dans IntelliJ, soit modifier directement le fichier application.properties.
 
 ```bash
-server.port=${SERVER_PORT} # par exemple, 3001
-server.url=${SERVER_URL} # par exemple, http://localhost:3001
+server.port=${SERVER_PORT} # par exemple, 3000
+server.url=${SERVER_URL} # par exemple, http://localhost:3000
 
 # Utilisez l'URL, le nom d'utilisateur et le mot de passe de votre serveur MySQL
 spring.datasource.url=${DB_URL}
@@ -64,11 +64,11 @@ Lancez l'Application
 mvn spring-boot:run
 ```
 
-Une fois le serveur démarré localement, accédez aux points d'API à l'adresse http://localhost:3001/api/. Remplacez 3001 par le port de serveur configuré.
+Une fois le serveur démarré localement, accédez aux points d'API à l'adresse http://localhost:3000/api/. Remplacez 3000 par le port de serveur configuré.
 
 ### Documentation Swagger
 
-Après le lancement de l'application localement, accédez à la documentation Swagger à l'adresse http://localhost:3001/swagger-ui/index.html. Encore une fois, remplacez 3001 par le port de serveur configuré.
+Après le lancement de l'application localement, accédez à la documentation Swagger à l'adresse http://localhost:3000/swagger-ui/index.html. Encore une fois, remplacez 3000 par le port de serveur configuré.
 
 À partir de là, vous pouvez explorer toutes les routes qui ne nécessitent pas d'authentification.
 
