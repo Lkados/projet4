@@ -55,7 +55,8 @@ springdoc.swagger-ui.oauth.clientSecret=${JWT_KEY} # La même chaîne aléatoire
 Installez les Dépendances.
 
 ```bash
-mvn clean install
+mvn clean
+mvn install
 ```
 
 Lancez l'Application
