@@ -16,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @Data
 @Service
@@ -66,6 +67,11 @@ public class UserService {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new NoSuchElementException("User not found with id : " + id));
         return modelMapper.map(user, UserDTO.class);
+    }
+
+    public boolean emailExists(String email) {
+        Optional<User> existingUser = userRepository.findByEmail(email);
+        return existingUser.isPresent();
     }
 
 }

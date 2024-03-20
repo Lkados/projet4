@@ -31,6 +31,12 @@ public class AuthController {
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public ResponseEntity<Map<String, String>> register(@RequestBody RegisterDTO registerDTO) {
+        // Check if the email is already in use
+        if (userService.emailExists(registerDTO.getEmail())) {
+            System.out.println("Email already in use");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Collections.singletonMap("error", "Email already in use"));
+        }
+        System.out.println(registerDTO.getEmail());
         userService.registerNewUser(registerDTO);
         LoginDTO loginDTO = new LoginDTO();
         loginDTO.setEmail(registerDTO.getEmail());
